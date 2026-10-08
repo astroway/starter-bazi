@@ -25,6 +25,12 @@ npm run build
 npm start                # http://localhost:5179, serves the built app and the API route
 ```
 
+## Deploy it
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/astroway/starter-bazi)
+
+The button reads `render.yaml`: one Node web service on the free plan, built with `npm run build` and started with `npm start`. Render asks for `ASTROWAY_API_KEY` when you create it; the key stays on the server. Any host that runs Node 22 works the same way: build once, start, set the key.
+
 ## What costs what
 
 One reading is **30 credits**: 20 for `/bazi/chart` (Tier 2) and 10 for `/bazi/luck-pillars` (Tier 1). The two calls are independent, so they go out together. On the free tier that is 333 readings a month.
